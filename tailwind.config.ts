@@ -8,7 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        restauco: "#fe5f41"
+      },
+      backgroundColor: {
+        restauco: "#fe5f41",
+        jumbotron: "#fff4f2"
+      },
+      borderColor: {
+        restauco: "#fe5f41"
+      }
     },
   },
   plugins: [],

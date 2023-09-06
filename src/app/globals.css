@@ -33,12 +33,24 @@
   @apply w-full
 }
 
-#btn-phone-number {
+.btn-animate-left-to-right {
   background: linear-gradient(to left, #ec583a 50%, #b9442d 50%) right;
   background-size: 200%;
   transition: 500ms ease-out;
 }
 
-#btn-phone-number:hover {
+.btn-animate-left-to-right:hover {
   background-position: left;
+}
+
+#watch-video-btn svg {
+  @apply text-3xl
+}
+
+.MuiRating-iconFilled {
+  color: #f86011;
+}
+
+.MuiRating-iconHover {
+  color: #ff8211
 }

@@ -1,15 +1,15 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import NavBar from './_component/NavBar'
 
-const inter = Inter({ subsets: ['latin'] })
+import { ThemeProvider} from '@mui/material'
+
+import theme from '@/mui_theme/theme'
+import NavBar from './_component/navbar/NavBar'
 
 export const metadata: Metadata = {
   title: 'Restaurant',
   description: 'Nextjs 13 + MUI + Tailwind',
 }
-
 export default function RootLayout({
   children,
 }: {
@@ -23,11 +23,12 @@ export default function RootLayout({
           {/* font awesome 6.4.2 */}
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
         </head>
-      <body className={inter.className}>
+      <body>
+      <ThemeProvider theme={theme}>
         <NavBar />
-
         {children}
 
+      </ThemeProvider>
       </body>
     </html>
   )
