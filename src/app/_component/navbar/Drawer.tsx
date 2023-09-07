@@ -37,7 +37,7 @@ const DrawerNav = (props:props) => {
     ]
 
     return ( 
-        <Drawer open={props.drawerOpen} onClose={() => props.setOpenDrawer(false)} className="block lg:hidden">
+        <Drawer open={props.drawerOpen} onClose={() => { props.setOpenDrawer(false); }} className="block lg:hidden">
             <List className="px-5 first bg-jumbotron h-full">
                 <Box className="flex justify-between items-center">
                     <ListItemIcon onClick={() => props.setOpenDrawer(false)}>

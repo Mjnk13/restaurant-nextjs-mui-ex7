@@ -9,10 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        restauco: "#fe5f41"
+        restauco: "#fe5f41",
       },
       backgroundColor: {
         restauco: "#fe5f41",
+        restaucoIcon: "#ffeee9",
         jumbotron: "#fff4f2"
       },
       borderColor: {

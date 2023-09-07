@@ -13,9 +13,9 @@ import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 
 const Jumbotron = () => {
     return ( 
-        <Box className="jumbotron bg-jumbotron">
+        <Box className="jumbotron bg-jumbotron pt-28 md:pt-0">
         <Grid container>
-          <Grid item sm={6} className="px-6 md:ps-24 sm:pe-10 py-4 self-center">
+          <Grid item sm={6} className="px-6 md:ps-24 sm:pe-10 py-6 self-center">
             <Typography variant="h3" className="mb-5">Meet, Eat & Enjoy the true test</Typography>
             <Typography variant="body1" className="mb-5">Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.</Typography>
             <Stack direction="row" className="flex flex-wrap justify-around gap-4">
@@ -29,8 +29,8 @@ const Jumbotron = () => {
               <img className="h-fit" src="/images/home/user-review-jumbotron-1.jpg" alt="user review jumbotron 1" />
               <Box className="ps-8">
                 <Typography variant="h6">"Délicious restaurant is easy and takes just a couple.</Typography>
-                <Box className="flex items-end">
-                  <Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly />
+                <Box className="flex flex-wrap items-end">
+                  <Rating name="half-rating-read" defaultValue={5} precision={0.5} readOnly />
                   <Typography variant="body2" className="ms-2 text-restauco font-bold">- Robert</Typography>
                 </Box>
               </Box>
