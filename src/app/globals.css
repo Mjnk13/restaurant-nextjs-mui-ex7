@@ -59,6 +59,14 @@ svg.icon-best-food path {
   transform: translateX(6px);
 }
 
+.category-tab .Mui-selected {
+  @apply text-restauco
+}
+
+.category-tab .MuiTabs-indicator {
+  @apply bg-restauco h-1 z-[1]
+}
+
 @keyframes slideFromTop {
   0%   {top: -100px}
   100% {top: 0}

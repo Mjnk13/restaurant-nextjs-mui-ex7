@@ -18,6 +18,9 @@ const config: Config = {
       },
       borderColor: {
         restauco: "#fe5f41"
+      },
+      backgroundImage: {
+        bestFood: "url('/images/home/bg-best-food.jpg')"
       }
     },
   },
