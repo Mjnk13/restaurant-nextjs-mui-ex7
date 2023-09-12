@@ -11,7 +11,7 @@ const BookTable = () => {
         <Box className="book-table p-8 mt-20">
             <Container maxWidth="xl">
                 <Grid container spacing={10}>
-                    <Grid item md={6} lg={7}>
+                    <Grid item md={6} lg={7} className="self-center">
                         <img src="/images/home/form-jumbotron.jpg" alt="Form Jumbotron" className="w-full"/>
                     </Grid>
                     <Grid item md={6} lg={5}>

@@ -91,7 +91,7 @@ const PopularDishCarousel = () => {
             <Carousel
                 navButtonsAlwaysVisible={true}
                 animation="slide"
-                autoPlay={false}
+                autoPlay={true}
                 cycleNavigation={true}
                 indicatorIconButtonProps={{className: "mt-2"}}
                 fullHeightHover={false}

@@ -33,12 +33,12 @@ const BookTableForm = () => {
         <Box className="book-table-form mt-4">
             <TextField label="Number Of Guest" variant="outlined" fullWidth={true} className="mb-4"/>
             <Grid container spacing={4}>
-                <Grid item sm={6}>
+                <Grid item xs={6}>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <DatePicker label="Date" />
+                    <DatePicker label="Date"/>
                 </LocalizationProvider>
                 </Grid>
-                <Grid item sm={6}>
+                <Grid item xs={6}>
                     <FormControl fullWidth>
                         <InputLabel>Type</InputLabel>
                         <Select value={type} label="Type" onChange={handleChange}>
