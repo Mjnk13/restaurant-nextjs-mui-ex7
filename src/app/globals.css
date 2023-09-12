@@ -67,6 +67,14 @@ svg.icon-best-food path {
   @apply bg-restauco h-1 z-[1]
 }
 
+.book-table-form fieldset {
+  @apply rounded-full
+}
+
+.book-table-form .book-form-message fieldset {
+  @apply rounded-lg
+}
+
 @keyframes slideFromTop {
   0%   {top: -100px}
   100% {top: 0}

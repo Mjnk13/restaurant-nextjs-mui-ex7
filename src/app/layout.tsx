@@ -5,6 +5,7 @@ import { ThemeProvider} from '@mui/material'
 
 import theme from '@/mui_theme/theme'
 import NavBar from './_component/navbar/NavBar'
+import Footer from './_component/footer/Footer'
 
 export const metadata: Metadata = {
   title: 'Restaurant',
@@ -27,7 +28,9 @@ export default function RootLayout({
       <ThemeProvider theme={theme}>
         <NavBar />
         {children}
-
+        <footer>
+          <Footer/>
+        </footer>
       </ThemeProvider>
       </body>
     </html>
